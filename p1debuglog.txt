@@ -1,1 +1,25 @@
+(gdb) b main
+Breakpoint 1 at 0x873: file p1final.c, line 19.
+(gdb) r
+Starting program: /home/runner/Test3Session2/a.out 
+warning: Error disabling address space randomization: Operation not permitted
 
+Breakpoint 1, main () at p1final.c:19
+19  {
+(gdb) n
+21   input(&num1,&den1,&num2,&den2);
+(gdb) n
+enter the num and den:
+1 2
+enter another num and den:
+3 
+4
+22   add(num1,den1,num2,den2,&num3,&den3);
+(gdb) n
+23   output(num1,den1,num2,den2,num3,den3);
+(gdb) n
+24   return 0;
+(gdb) c
+Continuing.
+the sum of 1/2 + 3/4=10/8 [Inferior 1 (process 338) exited normally]
+(gdb) 
